@@ -82,7 +82,7 @@ export const tariffsData: Tariff[] = [
     freeWait: '3 daqiqa bepul kutish',
     amenities: 'Toza va soz holatdagi shahar avtomobillari',
     description: 'Kundalik qisqa shahar qatnovlari uchun eng tejamkor va qulay tanlov.',
-    cars: 'Cobalt, Nexia 3, Spark',
+    cars: 'Yengil avtomobil',
     features: [
       'Shahar bo\'ylab eng tezkor chaqiruv',
       '3 daqiqa bepul kutish vaqti',
@@ -100,7 +100,7 @@ export const tariffsData: Tariff[] = [
     freeWait: '5 daqiqa bepul kutish',
     amenities: 'Konditsioner, salfetkalar va sokin harakat',
     description: 'Konditsionerli, sokin va yangi avtomobillarda yuqori qulaylikdagi safarlar.',
-    cars: 'Tracker 2, Onix, Gentra',
+    cars: 'Qulay yengil avtomobil',
     features: [
       'Keng va qulay zamonaviy salon',
       '5 daqiqa bepul kutish vaqti',
@@ -118,7 +118,7 @@ export const tariffsData: Tariff[] = [
     freeWait: '10 daqiqa bepul kutish',
     amenities: 'Ichimlik suvi, telefon zaryadlagichlari & elita haydovchilar',
     description: 'Muhim biznes uchrashuvlar, hurmatli mehmonlar va tantanali tadbirlar uchun.',
-    cars: 'Malibu 2, BYD Han, Kia K5',
+    cars: 'Premium klass avtomobil',
     features: [
       'Premium toifadagi lyuks avtomobillar',
       '10 daqiqa bepul kutish vaqti',
@@ -136,7 +136,7 @@ export const tariffsData: Tariff[] = [
     freeWait: '5 daqiqa bepul kutish',
     amenities: '100% kafolatli eshikkacha yetkazib berish',
     description: 'Muhim hujjatlar, posilkalar va sovg\'alarni kafolatli tezkor yetkazish.',
-    cars: 'Tezkor shahar yetkazuvchilari',
+    cars: 'Yuk tashuvchi transport',
     features: [
       'Tezkor va kafolatli eshikkacha yetkazish',
       'Posilkani real vaqtda xaritada kuzatish',
