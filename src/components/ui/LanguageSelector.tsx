@@ -25,7 +25,7 @@ export const LanguageSelector: React.FC = () => {
   };
 
   return (
-    <DropdownMenu>
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
         <button
           className="shadcn-btn shadcn-btn-ghost lang-trigger-btn group"
