@@ -40,7 +40,7 @@ export const LanguageSelector: React.FC = () => {
         </button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent align="end" sideOffset={6} className="lang-dropdown-menu-compact">
+      <DropdownMenuContent align="end" sideOffset={3} className="lang-dropdown-menu-compact">
         {languages.map((lang) => {
           const isSelected = lang.code === currentLang.code;
           return (
