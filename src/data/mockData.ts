@@ -84,16 +84,16 @@ export const tariffsData: Tariff[] = [
     description: 'Kundalik qisqa shahar qatnovlari uchun eng tejamkor va qulay tanlov.',
     cars: 'Cobalt, Nexia 3, Spark',
     features: [
-      'Boshlang\'ich: 10 000 so\'m (1.5 km)',
-      'Keyingi har 1 km uchun: 1 800 so\'m',
+      'Shahar bo\'ylab eng tezkor chaqiruv',
       '3 daqiqa bepul kutish vaqti',
-      '24/7 tezkor xizmat va toza salon',
+      'Toza va soz shahar avtomobillari',
+      '24/7 dispetcher va xavfsizlik nazorati',
     ],
   },
   {
     id: 'comfort',
     name: 'Komfort+ Klass',
-    badge: 'Eng Ommabop',
+    badge: 'Yuqori Qulaylik',
     startPrice: '16 000',
     baseDistance: '2.0 km gacha kiritilgan',
     perKm: '2 600 so\'m / km',
@@ -101,12 +101,11 @@ export const tariffsData: Tariff[] = [
     amenities: 'Konditsioner, salfetkalar va sokin harakat',
     description: 'Konditsionerli, sokin va yangi avtomobillarda yuqori qulaylikdagi safarlar.',
     cars: 'Tracker 2, Onix, Gentra',
-    isPopular: true,
     features: [
-      'Boshlang\'ich: 16 000 so\'m (2.0 km)',
-      'Keyingi har 1 km uchun: 2 600 so\'m',
+      'Keng va qulay zamonaviy salon',
       '5 daqiqa bepul kutish vaqti',
       'Konditsioner va sokin yangi avtomobillar',
+      'Tajribali va xushmuomala haydovchilar',
     ],
   },
   {
@@ -121,10 +120,10 @@ export const tariffsData: Tariff[] = [
     description: 'Muhim biznes uchrashuvlar, hurmatli mehmonlar va tantanali tadbirlar uchun.',
     cars: 'Malibu 2, BYD Han, Kia K5',
     features: [
-      'Boshlang\'ich: 30 000 so\'m (3.0 km)',
-      'Keyingi har 1 km uchun: 4 500 so\'m',
+      'Premium toifadagi lyuks avtomobillar',
       '10 daqiqa bepul kutish vaqti',
       'Ichimlik suvi va zaryadlagichlar bilan ta\'minlangan',
+      'Elita haydovchilar va shaxsiy servis',
     ],
   },
   {
@@ -139,10 +138,10 @@ export const tariffsData: Tariff[] = [
     description: 'Muhim hujjatlar, posilkalar va sovg\'alarni kafolatli tezkor yetkazish.',
     cars: 'Tezkor shahar yetkazuvchilari',
     features: [
-      'Boshlang\'ich: 12 000 so\'m (1.5 km)',
-      'Keyingi har 1 km uchun: 2 000 so\'m',
+      'Tezkor va kafolatli eshikkacha yetkazish',
       'Posilkani real vaqtda xaritada kuzatish',
       'Maxfiy SMS kod orqali xavfsiz topshirish',
+      'Hujjatlar va posilkalar to\'liq xavfsizligi',
     ],
   },
 ];

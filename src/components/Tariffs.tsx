@@ -42,17 +42,8 @@ export const Tariffs: React.FC = () => {
                 viewport={{ once: true, margin: '-20px' }}
                 transition={{ duration: 0.4, delay: idx * 0.08 }}
                 onClick={() => setSelectedTariff(tariff.id)}
-                className={`tariff-card-compact ${tariff.isPopular ? 'popular' : ''} ${
-                  isSelected ? 'selected' : ''
-                }`}
+                className={`tariff-card-compact ${isSelected ? 'selected' : ''}`}
               >
-                {tariff.isPopular && (
-                  <div className="compact-popular-badge">
-                    <Sparkles size={11} />
-                    <span>{t('tariffs.popular')}</span>
-                  </div>
-                )}
-
                 {/* Top Row: Icon + Title + Badge */}
                 <div className="compact-header-row">
                   <div className="flex items-center gap-3">
@@ -64,15 +55,6 @@ export const Tariffs: React.FC = () => {
                       <span className="compact-badge-text">{tariff.badge}</span>
                     </div>
                   </div>
-                </div>
-
-                {/* Price Display — Single Horizontal Line */}
-                <div className="compact-price-section">
-                  <div className="compact-price-row">
-                    <span className="compact-digits">{tariff.startPrice}&nbsp;so'm</span>
-                    <span className="compact-unit">{t('tariffs.from')}</span>
-                  </div>
-                  <span className="compact-dist-note">• {tariff.baseDistance}</span>
                 </div>
 
                 {/* Specs Bullets */}
