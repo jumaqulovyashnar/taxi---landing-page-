@@ -44,16 +44,14 @@ export const Tariffs: React.FC = () => {
                 onClick={() => setSelectedTariff(tariff.id)}
                 className={`tariff-card-compact ${isSelected ? 'selected' : ''}`}
               >
-                {/* Top Row: Icon + Title + Badge */}
+                {/* Top: Icon + Title + Badge */}
                 <div className="compact-header-row">
-                  <div className="flex items-center gap-3">
-                    <div className="compact-icon-box">
-                      {getTariffIcon(tariff.id)}
-                    </div>
-                    <div>
-                      <h3 className="compact-tariff-title">{tariff.name}</h3>
-                      <span className="compact-badge-text">{tariff.badge}</span>
-                    </div>
+                  <div className="compact-icon-box">
+                    {getTariffIcon(tariff.id)}
+                  </div>
+                  <div className="compact-title-group">
+                    <h3 className="compact-tariff-title">{tariff.name}</h3>
+                    <span className="compact-badge-text">{tariff.badge}</span>
                   </div>
                 </div>
 

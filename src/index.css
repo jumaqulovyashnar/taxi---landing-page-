@@ -1747,7 +1747,11 @@ html.light .tariff-card-compact {
 }
 
 .compact-header-row {
-  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
 .compact-icon-box {
@@ -1764,12 +1768,18 @@ html.light .tariff-card-compact {
   box-shadow: 0 4px 12px rgba(255, 210, 31, 0.08);
 }
 
+.compact-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .compact-tariff-title {
   font-size: 1.25rem;
   font-weight: 800;
   color: var(--text-white);
   line-height: 1.35;
-  margin: 0 0 4px 0;
+  margin: 0;
 }
 
 html.light .compact-tariff-title {
