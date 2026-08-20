@@ -91,6 +91,12 @@ html.light {
 
   --header-bg: rgba(255, 255, 255, 0.7);
   --header-bg-scrolled: rgba(255, 255, 255, 0.9);
+  color-scheme: light;
+}
+
+html.light body {
+  background-color: #F8FAFC;
+  color: #1E293B;
 }
 
 /* Reset & Global */
@@ -179,6 +185,10 @@ button, input, select {
   background: linear-gradient(180deg, var(--bg-black) 0%, #060B14 50%, var(--bg-black) 100%);
 }
 
+html.light .light-dark-bg {
+  background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 50%, #F8FAFC 100%);
+}
+
 /* Luxury Gradient Typography */
 .gradient-text-gold {
   background: var(--gold-gradient);
@@ -189,6 +199,12 @@ button, input, select {
 
 .gradient-text-white {
   background: linear-gradient(180deg, #FFFFFF 0%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.light .gradient-text-white {
+  background: linear-gradient(180deg, #0F172A 0%, #334155 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -337,10 +353,21 @@ button, input, select {
   transition: var(--transition);
 }
 
+html.light .header {
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 .header.scrolled {
   background: rgba(3, 7, 18, 0.85);
   border-bottom-color: rgba(234, 179, 8, 0.15);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+html.light .header.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom-color: rgba(217, 119, 6, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 .nav-container {
@@ -388,6 +415,10 @@ button, input, select {
   line-height: 1.1;
 }
 
+html.light .logo-brand {
+  color: #0F172A;
+}
+
 .brand-accent {
   color: #FFD21F;
   margin-left: 2px;
@@ -424,7 +455,7 @@ button, input, select {
 }
 
 html.light .nav-link {
-  color: #475569;
+  color: #334155;
 }
 
 html.light .nav-link:hover {
@@ -464,10 +495,27 @@ html.light .nav-link:hover {
   background: rgba(234, 179, 8, 0.08);
 }
 
+html.light .call-btn {
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  color: #1E293B;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+html.light .call-btn:hover {
+  border-color: #D97706;
+  background: #FFFBEB;
+  color: #D97706;
+}
+
 .call-pulse {
   color: var(--gold-400);
   display: flex;
   align-items: center;
+}
+
+html.light .call-pulse {
+  color: #D97706;
 }
 
 /* Shadcn UI Styled Controls */
@@ -496,6 +544,19 @@ html.light .nav-link:hover {
   transform: translateY(-2px);
 }
 
+html.light .shadcn-btn-ghost {
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  color: #1E293B;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+html.light .shadcn-btn-ghost:hover {
+  background: #FFFBEB;
+  border-color: #D97706;
+  color: #D97706;
+}
+
 .theme-toggle-btn {
   width: 42px;
   height: 42px;
@@ -513,8 +574,16 @@ html.light .nav-link:hover {
   color: var(--gold-400);
 }
 
+html.light .theme-sun-icon {
+  color: #D97706;
+}
+
 .theme-moon-icon {
   color: #6366F1;
+}
+
+html.light .theme-moon-icon {
+  color: #4F46E5;
 }
 
 .language-selector-wrapper {
@@ -532,15 +601,27 @@ html.light .nav-link:hover {
   color: var(--gold-400);
 }
 
+html.light .lang-globe-icon {
+  color: #D97706;
+}
+
 .lang-short-code {
   font-weight: 800;
   font-size: 0.8rem;
   color: var(--text-white);
 }
 
+html.light .lang-short-code {
+  color: #0F172A;
+}
+
 .lang-chevron {
   transition: transform 0.2s ease;
   color: var(--text-muted);
+}
+
+html.light .lang-chevron {
+  color: #64748B;
 }
 
 .lang-chevron.rotate-180 {
@@ -561,6 +642,12 @@ html.light .nav-link:hover {
   z-index: 1000;
 }
 
+html.light .shadcn-dropdown {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
 .shadcn-dropdown-header {
   padding: 6px 10px;
   font-size: 0.725rem;
@@ -570,10 +657,18 @@ html.light .nav-link:hover {
   letter-spacing: 0.5px;
 }
 
+html.light .shadcn-dropdown-header {
+  color: #64748B;
+}
+
 .shadcn-dropdown-divider {
   height: 1px;
   background: var(--border-glass);
   margin: 4px 0;
+}
+
+html.light .shadcn-dropdown-divider {
+  background: #E2E8F0;
 }
 
 .shadcn-dropdown-item {
@@ -591,6 +686,20 @@ html.light .nav-link:hover {
   cursor: pointer;
   transition: var(--transition);
   text-align: left;
+}
+
+html.light .shadcn-dropdown-item {
+  color: #1E293B;
+}
+
+html.light .shadcn-dropdown-item:hover {
+  background: #F1F5F9;
+  color: #D97706;
+}
+
+html.light .shadcn-dropdown-item.active {
+  background: rgba(217, 119, 6, 0.1);
+  color: #D97706;
 }
 
 .shadcn-dropdown-item:hover, .shadcn-dropdown-item.active {
@@ -1127,11 +1236,59 @@ html.light .hero-bottom-vignette {
   line-height: 1.6;
 }
 
+html.light .about-metric {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+html.light .about-metric strong {
+  color: #0F172A;
+}
+
+html.light .about-metric span {
+  color: #64748B;
+}
+
+html.light .metric-icon-wrap {
+  background: rgba(217, 119, 6, 0.1);
+  border-color: rgba(217, 119, 6, 0.25);
+}
+
+html.light .about-feature-box {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+html.light .about-feature-box:hover {
+  background: #FFFFFF;
+  border-color: #D97706;
+}
+
+html.light .feat-header h4 {
+  color: #0F172A;
+}
+
+html.light .about-feature-box p {
+  color: #64748B;
+}
+
+html.light .feat-icon {
+  background: rgba(217, 119, 6, 0.1);
+  border-color: rgba(217, 119, 6, 0.25);
+  color: #D97706;
+}
+
 /* ==========================================================================
    TECH ARCHITECTURE SECTION
    ========================================================================== */
 .tech-section {
   position: relative;
+}
+
+html.light .tech-section {
+  background: #F8FAFC;
 }
 
 .tech-grid {
@@ -1159,6 +1316,18 @@ html.light .hero-bottom-vignette {
   transform: translateY(-5px);
 }
 
+html.light .tech-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+html.light .tech-card:hover {
+  background: #FFFFFF;
+  border-color: #D97706;
+  box-shadow: 0 14px 35px -8px rgba(217, 119, 6, 0.18);
+}
+
 .tech-icon-wrap {
   width: 54px;
   height: 54px;
@@ -1172,6 +1341,12 @@ html.light .hero-bottom-vignette {
   margin-bottom: 20px;
 }
 
+html.light .tech-icon-wrap {
+  background: rgba(217, 119, 6, 0.1);
+  border-color: rgba(217, 119, 6, 0.25);
+  color: #D97706;
+}
+
 .tech-title {
   font-size: 1.25rem;
   font-weight: 800;
@@ -1179,10 +1354,18 @@ html.light .hero-bottom-vignette {
   margin-bottom: 12px;
 }
 
+html.light .tech-title {
+  color: #0F172A;
+}
+
 .tech-desc {
   font-size: 0.925rem;
   color: var(--text-secondary);
   line-height: 1.65;
+}
+
+html.light .tech-desc {
+  color: #475569;
 }
 
 /* ==========================================================================
@@ -1602,6 +1785,46 @@ html.light .hero-bottom-vignette {
   box-shadow: 0 0 10px var(--gold-500);
 }
 
+html.light .how-it-works {
+  background: #F8FAFC;
+}
+
+html.light .step-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+html.light .step-card:hover {
+  background: #FFFFFF;
+  border-color: #D97706;
+  box-shadow: 0 14px 35px -8px rgba(217, 119, 6, 0.18);
+}
+
+html.light .step-icon-circle {
+  background: rgba(217, 119, 6, 0.1);
+  border-color: rgba(217, 119, 6, 0.25);
+  color: #D97706;
+}
+
+html.light .step-title {
+  color: #0F172A;
+}
+
+html.light .step-description {
+  color: #475569;
+}
+
+html.light .step-badge-number {
+  background: rgba(217, 119, 6, 0.1);
+  border-color: rgba(217, 119, 6, 0.25);
+  color: #D97706;
+}
+
+html.light .timeline-track {
+  background: #E2E8F0;
+}
+
 /* ==========================================================================
    6. SERVICES
    ========================================================================== */
@@ -1793,6 +2016,16 @@ html.light .compact-tariff-title {
   letter-spacing: 0.3px;
 }
 
+html.light .compact-icon-box {
+  background: rgba(217, 119, 6, 0.1);
+  border-color: rgba(217, 119, 6, 0.28);
+  color: #D97706;
+}
+
+html.light .compact-badge-text {
+  color: #D97706;
+}
+
 .compact-specs-list {
   display: flex;
   flex-direction: column;
@@ -1819,6 +2052,11 @@ html.light .compact-tariff-title {
   justify-content: center;
   flex-shrink: 0;
   margin-top: 3px;
+}
+
+html.light .compact-check-circle {
+  background: rgba(217, 119, 6, 0.12);
+  color: #D97706;
 }
 
 .compact-spec-text {
@@ -1854,6 +2092,10 @@ html.light .compact-models-pill {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+html.light .compact-models-names {
+  color: #64748B;
 }
 
 @media (max-width: 1200px) {
@@ -2406,12 +2648,20 @@ html.light .app-download-wrapper {
   letter-spacing: -0.6px;
 }
 
+html.light .app-title {
+  color: #0F172A;
+}
+
 .app-desc {
   font-size: 0.98rem;
   color: var(--text-secondary);
   line-height: 1.8;
   margin-bottom: 20px;
   max-width: 500px;
+}
+
+html.light .app-desc {
+  color: #475569;
 }
 
 .app-feature-list-grid {
@@ -2448,12 +2698,16 @@ html.light .app-feat-item {
 
 html.light .app-feat-item:hover {
   background: #FFFFFF;
-  border-color: #FFD21F;
+  border-color: #D97706;
 }
 
 .app-feat-item:hover .feat-arrow {
   transform: translateX(3px);
   color: #FFD21F;
+}
+
+html.light .app-feat-item:hover .feat-arrow {
+  color: #D97706;
 }
 
 .app-feat-icon {
@@ -2469,10 +2723,22 @@ html.light .app-feat-item:hover {
   color: #FFD21F;
 }
 
+html.light .app-feat-icon {
+  background: rgba(217, 119, 6, 0.1);
+  border-color: rgba(217, 119, 6, 0.25);
+  color: #D97706;
+}
+
 .icon-gold, .icon-emerald, .icon-shield {
   background: rgba(255, 210, 31, 0.1);
   border: 1px solid rgba(255, 210, 31, 0.25);
   color: #FFD21F;
+}
+
+html.light .icon-gold, html.light .icon-emerald, html.light .icon-shield {
+  background: rgba(217, 119, 6, 0.1);
+  border-color: rgba(217, 119, 6, 0.25);
+  color: #D97706;
 }
 
 .app-feat-text {
@@ -2501,11 +2767,19 @@ html.light .app-feat-header strong {
   transition: transform 0.25s ease, color 0.25s ease;
 }
 
+html.light .feat-arrow {
+  color: #94A3B8;
+}
+
 .app-feat-text p {
   font-size: 0.82rem;
   color: var(--text-muted);
   line-height: 1.4;
   margin: 0;
+}
+
+html.light .app-feat-text p {
+  color: #64748B;
 }
 
 /* Right Column: 3D Photorealistic Smartphone */
