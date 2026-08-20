@@ -41,7 +41,6 @@ export const Tariffs: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-20px' }}
                 transition={{ duration: 0.4, delay: idx * 0.08 }}
-                whileHover={{ y: -5 }}
                 onClick={() => setSelectedTariff(tariff.id)}
                 className={`tariff-card-compact ${tariff.isPopular ? 'popular' : ''} ${
                   isSelected ? 'selected' : ''

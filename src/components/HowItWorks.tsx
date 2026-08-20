@@ -45,7 +45,6 @@ export const HowItWorks: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-40px' }}
                   transition={{ duration: 0.5, delay: idx * 0.12 }}
-                  whileHover={{ y: -6 }}
                   className="step-card"
                 >
                   <div className="step-badge-number">{step.number}</div>

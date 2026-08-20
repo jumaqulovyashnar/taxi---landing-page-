@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
           </div>
           <div className="logo-title-group">
             <span className="logo-brand">
-              URGIMCHAK<span className="brand-accent">TAXI</span>
+              O'RGIMCHAK<span className="brand-accent">TAXI</span>
             </span>
           </div>
         </a>

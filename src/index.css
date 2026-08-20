@@ -1145,16 +1145,18 @@ html.light .hero-bottom-vignette {
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-xl);
   padding: 34px 28px;
-  transition: var(--transition);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
   position: relative;
   backdrop-filter: blur(16px);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .tech-card:hover {
   border-color: var(--gold-400);
   background: var(--bg-card-hover);
   box-shadow: var(--shadow-gold);
-  transform: translateY(-6px);
+  transform: translateY(-5px);
 }
 
 .tech-icon-wrap {
@@ -1526,16 +1528,18 @@ html.light .hero-bottom-vignette {
   border-radius: var(--radius-xl);
   padding: 30px 24px;
   text-align: left;
-  transition: var(--transition);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
   position: relative;
   backdrop-filter: blur(14px);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .step-card:hover {
   border-color: var(--gold-400);
   background: var(--bg-card-hover);
   box-shadow: var(--shadow-gold);
-  transform: translateY(-6px);
+  transform: translateY(-5px);
 }
 
 .step-badge-number {
@@ -1723,9 +1727,11 @@ html.light .hero-bottom-vignette {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 html.light .tariff-card-compact {

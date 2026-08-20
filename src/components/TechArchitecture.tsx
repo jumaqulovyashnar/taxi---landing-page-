@@ -63,7 +63,6 @@ export const TechArchitecture: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-30px' }}
                 transition={{ duration: 0.5, delay: idx * 0.08 }}
-                whileHover={{ y: -6 }}
                 className="tech-card"
               >
                 <div className="tech-icon-wrap">
