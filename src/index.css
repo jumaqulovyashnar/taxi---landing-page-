@@ -995,6 +995,22 @@ html.light .hero-bottom-vignette {
   transform: translateY(-2px);
 }
 
+html.light .hero-btn-secondary {
+  background: #FFD21F;
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  color: #080808;
+  font-weight: 800;
+  box-shadow: 0 8px 25px rgba(255, 210, 31, 0.3);
+}
+
+html.light .hero-btn-secondary:hover {
+  background: #FFE052;
+  border-color: #D97706;
+  color: #080808;
+  box-shadow: 0 12px 32px rgba(255, 210, 31, 0.45);
+  transform: translateY(-3px) scale(1.02);
+}
+
 .hero-perks-inline {
   display: flex;
   align-items: center;
