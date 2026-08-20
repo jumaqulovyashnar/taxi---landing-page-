@@ -1721,8 +1721,8 @@ html.light .hero-bottom-vignette {
 .tariff-card-compact {
   background: #0D1424;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 26px 22px;
+  border-radius: 22px;
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1746,50 +1746,30 @@ html.light .tariff-card-compact {
   box-shadow: 0 18px 40px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 210, 31, 0.18);
 }
 
-.tariff-card-compact.popular {
-  border: 1.5px solid rgba(255, 210, 31, 0.65);
-  box-shadow: 0 18px 45px -10px rgba(0, 0, 0, 0.75), 0 0 25px rgba(255, 210, 31, 0.2);
-}
-
-.compact-popular-badge {
-  position: absolute;
-  top: -11px;
-  right: 16px;
-  background: linear-gradient(135deg, #FFF275 0%, #FFD21F 50%, #EAB308 100%);
-  color: #080808;
-  font-size: 0.68rem;
-  font-weight: 900;
-  padding: 4px 12px;
-  border-radius: var(--radius-full);
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  box-shadow: 0 4px 14px rgba(255, 210, 31, 0.4);
-  z-index: 10;
-  letter-spacing: 0.5px;
-}
-
 .compact-header-row {
-  margin-bottom: 14px;
+  margin-bottom: 22px;
 }
 
 .compact-icon-box {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
   background: rgba(255, 210, 31, 0.1);
-  border: 1px solid rgba(255, 210, 31, 0.25);
+  border: 1px solid rgba(255, 210, 31, 0.28);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  color: #FFD21F;
+  box-shadow: 0 4px 12px rgba(255, 210, 31, 0.08);
 }
 
 .compact-tariff-title {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: var(--text-white);
-  line-height: 1.2;
+  line-height: 1.35;
+  margin: 0 0 4px 0;
 }
 
 html.light .compact-tariff-title {
@@ -1797,97 +1777,60 @@ html.light .compact-tariff-title {
 }
 
 .compact-badge-text {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 700;
   color: #FFD21F;
-}
-
-.compact-price-section {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  margin-bottom: 14px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-html.light .compact-price-section {
-  border-bottom: 1px solid #F1F5F9;
-}
-
-.compact-price-row {
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
-  white-space: nowrap;
-}
-
-.compact-digits {
-  font-size: 1.6rem;
-  font-weight: 900;
-  color: #FFD21F;
-  letter-spacing: -0.5px;
-  line-height: 1.1;
-  white-space: nowrap;
-}
-
-.compact-unit {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  white-space: nowrap;
-}
-
-.compact-dist-note {
-  font-size: 0.74rem;
-  font-weight: 600;
-  color: #FFD21F;
-  white-space: nowrap;
+  letter-spacing: 0.3px;
 }
 
 .compact-specs-list {
   display: flex;
   flex-direction: column;
-  gap: 9px;
-  margin-bottom: 16px;
+  gap: 13px;
+  margin-bottom: 22px;
   flex: 1;
 }
 
 .compact-spec-item {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
-  font-size: 0.82rem;
+  gap: 10px;
+  font-size: 0.88rem;
 }
 
 .compact-check-circle {
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  background: rgba(255, 210, 31, 0.12);
+  background: rgba(255, 210, 31, 0.14);
   color: #FFD21F;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .compact-spec-text {
-  color: var(--text-secondary);
-  line-height: 1.4;
+  color: #CBD5E1;
+  line-height: 1.55;
   font-weight: 500;
+}
+
+html.light .compact-spec-text {
+  color: #475569;
 }
 
 .compact-models-pill {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.03);
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  padding: 8px 12px;
-  font-size: 0.78rem;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  margin-top: auto;
 }
 
 html.light .compact-models-pill {
@@ -1896,7 +1839,7 @@ html.light .compact-models-pill {
 }
 
 .compact-models-names {
-  color: var(--text-muted);
+  color: #94A3B8;
   font-weight: 600;
   white-space: nowrap;
   overflow: hidden;

@@ -11,15 +11,15 @@ export const Tariffs: React.FC = () => {
   const getTariffIcon = (id: string) => {
     switch (id) {
       case 'eco':
-        return <Zap size={18} className="text-yellow-400" />;
+        return <Zap size={22} className="text-yellow-400" />;
       case 'comfort':
-        return <Sparkles size={18} className="text-yellow-400" />;
+        return <Sparkles size={22} className="text-yellow-400" />;
       case 'business':
-        return <Crown size={18} className="text-yellow-400" />;
+        return <Crown size={22} className="text-yellow-400" />;
       case 'delivery':
-        return <PackageCheck size={18} className="text-yellow-400" />;
+        return <PackageCheck size={22} className="text-yellow-400" />;
       default:
-        return <Zap size={18} className="text-yellow-400" />;
+        return <Zap size={22} className="text-yellow-400" />;
     }
   };
 
