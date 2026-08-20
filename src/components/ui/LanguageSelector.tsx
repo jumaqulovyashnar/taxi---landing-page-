@@ -1,22 +1,20 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Globe, ChevronDown, Check, Languages } from 'lucide-react';
+import { Globe, ChevronDown, Check } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
 } from './dropdown-menu';
 
 export const LanguageSelector: React.FC = () => {
   const { i18n } = useTranslation();
 
   const languages = [
-    { code: 'uz', label: "O'zbekcha", short: 'UZ', flag: '🇺🇿', desc: "O'zbek tili" },
-    { code: 'ru', label: 'Русский', short: 'RU', flag: '🇷🇺', desc: 'Русский язык' },
-    { code: 'en', label: 'English', short: 'EN', flag: '🇺🇸', desc: 'English (US)' },
+    { code: 'uz', label: "O'zbekcha", short: 'UZ', flag: '🇺🇿' },
+    { code: 'ru', label: 'Русский', short: 'RU', flag: '🇷🇺' },
+    { code: 'en', label: 'English', short: 'EN', flag: '🇺🇸' },
   ];
 
   const currentLang = languages.find((l) => l.code === (i18n.language || 'uz')) || languages[0];
@@ -33,54 +31,30 @@ export const LanguageSelector: React.FC = () => {
           className="shadcn-btn shadcn-btn-ghost lang-trigger-btn group"
           aria-label="Tilni tanlash"
         >
-          <Globe size={16} className="lang-globe-icon" />
+          <Globe size={15} className="lang-globe-icon" />
           <span className="lang-short-code">{currentLang.short}</span>
           <ChevronDown
-            size={14}
+            size={13}
             className="lang-chevron transition-transform duration-200 group-data-[state=open]:rotate-180"
           />
         </button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent align="end" className="lang-dropdown-menu">
-        <DropdownMenuLabel className="lang-dropdown-header">
-          <Languages size={13} className="text-yellow-400" />
-          <span>
-            {currentLang.code === 'uz'
-              ? 'Tilni tanlang'
-              : currentLang.code === 'ru'
-              ? 'Выберите язык'
-              : 'Select language'}
-          </span>
-        </DropdownMenuLabel>
-        
-        <DropdownMenuSeparator className="lang-dropdown-sep" />
-
-        <div className="lang-dropdown-list">
-          {languages.map((lang) => {
-            const isSelected = lang.code === currentLang.code;
-            return (
-              <DropdownMenuItem
-                key={lang.code}
-                onClick={() => handleSelect(lang.code)}
-                className={`lang-dropdown-item ${isSelected ? 'active' : ''}`}
-              >
-                <div className="lang-item-left">
-                  <span className="lang-flag-emoji">{lang.flag}</span>
-                  <div className="lang-item-info">
-                    <span className="lang-item-title">{lang.label}</span>
-                    <span className="lang-item-desc">{lang.desc}</span>
-                  </div>
-                </div>
-                {isSelected && (
-                  <div className="lang-check-badge">
-                    <Check size={13} />
-                  </div>
-                )}
-              </DropdownMenuItem>
-            );
-          })}
-        </div>
+      <DropdownMenuContent align="end" sideOffset={6} className="lang-dropdown-menu-compact">
+        {languages.map((lang) => {
+          const isSelected = lang.code === currentLang.code;
+          return (
+            <DropdownMenuItem
+              key={lang.code}
+              onClick={() => handleSelect(lang.code)}
+              className={`lang-item-compact ${isSelected ? 'active' : ''}`}
+            >
+              <span className="lang-item-flag">{lang.flag}</span>
+              <span className="lang-item-name">{lang.label}</span>
+              {isSelected && <Check size={14} className="lang-item-check" />}
+            </DropdownMenuItem>
+          );
+        })}
       </DropdownMenuContent>
     </DropdownMenu>
   );
